@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: #f7f0b4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: rgb(216, 244, 248);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.note-input {
+  flex: 100%;
+  padding: 10px;
+  border: 1px solid rgb(171, 170, 170);
+}
+
+button {
+  padding: 8px 16px;
+  background: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #014997;
+}
+
