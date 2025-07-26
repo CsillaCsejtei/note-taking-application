@@ -13,15 +13,15 @@ function loadNotes() {
     })
     .then(function (notes) {
       notes.forEach(function (note) {
-        showNoteOnPage(note.text);
+        showNoteOnPage(note.note);
       });
     });
 }
 
 function addNote() {
-  var text = noteInput.value.trim();
+  var note = noteInput.value.trim();
 
-  if (text === "") {
+  if (note === "") {
     alert("Please write something!");
     return;
   }
@@ -31,19 +31,19 @@ function addNote() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ text: text }),
+    body: JSON.stringify({ note: note }),
   })
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      showNoteOnPage(data.note.text); 
+      showNoteOnPage(data.note.note); 
       noteInput.value = "";
     });
 }
 
-function showNoteOnPage(text) {
+function showNoteOnPage(note) {
   var li = document.createElement("li");
-  li.textContent = text;
+  li.textContent = note;
   noteList.appendChild(li);
 }
