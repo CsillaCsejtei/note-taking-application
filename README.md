@@ -21,4 +21,8 @@ All actions are saved immediately and reflected in the JSON storage file.
 This project is licensed under the **MIT License**.
 
 ## Author
-Csilla Csejtei / csillacsejtei@gmail.com
+Csilla Csejtei
+
+## Links
+https://github.com/CsillaCsejtei/note-taking-application
+https://note-taking-application-93q1.onrender.com
