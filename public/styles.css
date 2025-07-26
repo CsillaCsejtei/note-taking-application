@@ -27,17 +27,34 @@ form {
   flex: 100%;
   padding: 10px;
   border: 1px solid rgb(171, 170, 170);
+  border-radius: 5px;
 }
 
 button {
   padding: 8px 16px;
   background: #007bff;
   border: none;
+  border-radius: 5px;
   color: white;
+  font-weight:bold ;
   cursor: pointer;
 }
 
 button:hover {
   background: #014997;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #f1f1f1;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
