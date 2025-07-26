@@ -54,7 +54,10 @@ li {
   margin-bottom: 8px;
   background: #f1f1f1;;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 8px;
 }
 
+li button:first-of-type{
+  margin-left: auto;
+}
